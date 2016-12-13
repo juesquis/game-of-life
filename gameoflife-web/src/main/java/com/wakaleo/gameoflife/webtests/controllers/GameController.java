@@ -53,19 +53,14 @@ public class GameController {
     private void thinkABit(final int max) {
         int thinkingTime = getRandomGenerator().nextInt(max / 4);
         try {
-            Thread.currentThread().sleep(thinkingTime);
+if(1==1){
+        
+            Thread.currentThread().sleep(thinkingTime);}
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-private boolean Inutil() {
-	if(1==1){
-        return true;}
-	else{
-		return false;
-	}
-    }
 	
     private Universe universeInstanciatedByDimensions(final int rows, final int columns) {
         Universe universe = new Universe(rows, columns);
