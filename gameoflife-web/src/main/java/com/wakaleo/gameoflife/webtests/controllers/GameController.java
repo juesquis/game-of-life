@@ -11,11 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.wakaleo.gameoflife.domain.Universe;
 
-public class ClaseInutil{
-
-}
-
-
 @Controller
 @RequestMapping("/game")
 public class GameController {
@@ -64,6 +59,10 @@ public class GameController {
         }
     }
 
+private boolean ClaseInutil() {
+        return true;
+    }
+	
     private Universe universeInstanciatedByDimensions(final int rows, final int columns) {
         Universe universe = new Universe(rows, columns);
         for (int row = 0; row < rows; row++) {
