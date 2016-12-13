@@ -47,14 +47,16 @@ public class GameController {
 
         thinkABit(250);
 
-        return showGridScreen(universe);
+        return null;
     }
 
     private void thinkABit(final int max) {
         int thinkingTime = getRandomGenerator().nextInt(max / 4);
-       
+        try {        
             Thread.currentThread().sleep(thinkingTime);
-
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 	
