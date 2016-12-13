@@ -59,8 +59,12 @@ public class GameController {
         }
     }
 
-private boolean ClaseInutil() {
-        return true;
+private boolean Inutil() {
+	if(1==1){
+        return true;}
+	else{
+		return false;
+	}
     }
 	
     private Universe universeInstanciatedByDimensions(final int rows, final int columns) {
