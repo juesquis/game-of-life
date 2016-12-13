@@ -47,7 +47,7 @@ public class GameController {
 
         thinkABit(250);
 
-        return null;
+        return showGridScreen(universe);
     }
 
     private void thinkABit(final int max) {
