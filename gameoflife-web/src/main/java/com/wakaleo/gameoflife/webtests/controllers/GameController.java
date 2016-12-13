@@ -11,12 +11,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.wakaleo.gameoflife.domain.Universe;
 
-@Controller
-@RequestMapping("/game")
 public class ClaseInutil{
 
-
 }
+
+
+@Controller
+@RequestMapping("/game")
 public class GameController {
 
     private Random randomGenerator = new Random();
